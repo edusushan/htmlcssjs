@@ -1,0 +1,465 @@
+body{
+    /* font-family: 'Akaya Kanadaka', cursive; */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary:indianred;
+    --secondary:rgba(14,10,29,0.849);
+    --light:#2f3640;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.nav1{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px grey;
+
+}
+.left{
+    margin-left: 25px;
+    letter-spacing: 2px;
+}
+.left a{
+    text-decoration: none;
+    color:var(--primary);
+    font-weight:bold;
+    margin-right: 5px;
+}
+.right{
+    /* margin-right: 25px; */
+    flex-basis: 30%;
+
+}
+.right i{
+    margin: 0px 15px;
+    background-color: var(--primary);
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    transition: transform 0.5s;
+}
+.right i:hover{
+    transform: rotate(360deg);
+}
+
+.nav2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.nav2-left,.middle,.nav2-right{
+    /* letter-spacing: 2px; */
+    /* margin: 0px 30px; */
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+.nav2-left i{
+    margin-left: 12px;
+}
+.middle span{
+    color: var(--primary);
+   
+}
+.middle h2{
+    letter-spacing: 5px;
+}
+.middle p{
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 10px;
+}
+.nav2-right i{
+    font-size: 25px;
+    margin: 0px 10px;
+    
+}
+.nav3{
+    width: 100%;
+    height: 70px;
+    /* margin-right: 100px; */
+}
+.nav3 a{
+    text-decoration: none;
+    /* margin: 10px 10px; */
+    margin-right: 30px;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+    color: black
+    
+}
+.nav3 .navigation {
+    list-style: none;
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: space-between; */
+    justify-content: center;
+    /* align-items: center; */
+    margin: 10px 19px;
+}
+.nav3 ul li a:hover{
+    color: var(--primary);
+}
+.nav3 ul i{
+    color: var(--primary);
+    margin: 0px 5px;
+}
+.nav3 li{
+    position: relative;
+    z-index: 99;
+}
+.nav3 ul ul{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    
+    display: none;
+
+}
+.nav3 ul ul li{
+    list-style: none;
+    font-size: 12px;
+    box-shadow: 1px 2px 3px grey;
+    margin-bottom: 25px;
+    background-color: white;
+    border-bottom: 1px solid var(--primary);
+}
+.nav3  li:hover>ul{
+    display: block;
+}
+
+/* featured */
+
+.feature{
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(to right ,rgba(0,0,0,1) 20%,rgba(255,255,255,0.2)), url(./images/g1.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.featured-text{
+max-width: 500px;
+position: absolute;
+top: 50%;
+left: 10%;
+color: white;
+text-align: center;
+padding: 10px;
+font-size: 2rem;
+letter-spacing: 4px;
+font-family: 'Akaya Kanadaka', cursive; ;
+}
+.featured-text button{
+    padding: 10px 20px;
+    outline: none;
+    background-color: var(--secondary);
+    margin: 20px 0px;
+    color: white;
+    font-size: 1rem;
+
+}
+.latest{
+    padding: 50px 100px;
+}
+
+.product-intro h2{
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.product-intro span{
+    color: var(--primary);
+}
+.product-intro p{
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    letter-spacing: 2px;
+}
+
+.card-container{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 30px ;
+    
+}
+.card{
+    flex-basis: 20%;
+    /* border: 1px solid grey; */
+    /* box-shadow: 1px 2px 3px grey; */
+    padding: 0.8rem;
+    position: relative;
+}
+.card img{
+    /* height: 100px; */
+    width: 100%;
+    transition: 0.5s;
+
+}
+.card i{
+    color: goldenrod;
+    margin:10px 0;
+}
+.card button{
+    color: white;
+    background-color: var(--secondary);
+    outline: none;
+}
+.card:hover img ,.card:hover h2{
+    /* transform: scale(1.1); */
+    width: 90%;
+    color: var(--primary);
+}
+.card::before{
+    content: '20% off';
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    transform: rotate(-30deg);
+    padding: 0px 4px;
+
+
+}
+
+.latest hr{
+    margin-top: 40px;
+    
+}
+
+.trends .swiper {
+    width: 100%;
+      padding:50px
+  }
+
+ .trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   background-color:  var(--light);
+   color: white;
+   text-align: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+  }
+  .footer div{
+    flex-basis: 30%;
+  }
+  .footer-left h2{
+    font-size: 35px;
+    margin-left: 50px;
+    letter-spacing: 4px;
+  }
+  .footer-left h2 span{
+    color: var(--primary);
+  }
+  .footer-left p{
+    margin-left: 50px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    
+  }
+  .footer-middle i{
+    margin: 5px 5px;
+  }
+  .footer-middle p{
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+  .footer-right{
+    margin-right:  50px;
+  }
+
+  @media only screen and (max-width:700px){
+    .nav1{
+        position: relative;
+        z-index: 4;
+        
+      
+        /* background-color: white; */
+    
+    }
+    .right i{
+        position: relative;
+        font-size: 12px;
+        margin: 0px 4px;
+    }
+    .nav2{
+        width: 100%;
+        height: 80px;
+        
+    }
+   
+    
+    .nav2-left i{
+        margin-left: 0px;
+    }
+    .middle span{
+        color: var(--primary);
+       
+    }
+    .middle h2{
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+    .middle p{
+        font-size: 10px;
+        color: grey;
+        margin-bottom: 10px;
+    }
+    .nav2-right i{
+        font-size: 25px;
+        margin: 0px 10px;
+        
+  }
+  .nav3{
+    display: none;
+  }
+  .feature{
+    background-attachment: fixed;
+  }
+  .latest{
+    padding: 0px 0px;
+}
+
+.product-intro h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.product-intro span{
+    color: var(--primary);
+}
+.product-intro p{
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    letter-spacing: 2px;
+}
+  .card-container{
+    
+    
+    margin:2rem 0 ;
+    
+}
+.card-container .card{
+    flex-basis: 100%;
+    /* border: 1px solid grey; */
+    /* box-shadow: 1px 2px 3px grey; */
+    padding: 0.8rem;
+    position: relative;
+    text-align: center;
+}
+.card img{
+    /* height: 100px; */
+    width: 100%;
+    transition: 0.5s;
+
+}
+.card i{
+    color: goldenrod;
+    margin:0px 0;
+    font-size: 12px;
+}
+.card button{
+    color: white;
+    background-color: var(--secondary);
+    outline: none;
+}
+.trends .swiper {
+    width: 100%;
+      padding:50px
+  }
+
+ .trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+  }
+
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   background-color:  var(--light);
+   color: white;
+   text-align: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+  }
+  .footer div{
+    flex-basis: 20%;
+  }
+  .footer-left h2{
+    font-size: 35px;
+    margin-left: 50px;
+    letter-spacing: 4px;
+  }
+  .footer-left h2 span{
+    color: var(--primary);
+  }
+  .footer-left p{
+    
+    letter-spacing: 2px;
+    font-size: 13px;
+    
+  }
+  .footer-middle i{
+    margin: 1px 0px;
+  }
+  .footer-middle p{
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+  .footer-right{
+    margin-right:  50px;
+  }
+}

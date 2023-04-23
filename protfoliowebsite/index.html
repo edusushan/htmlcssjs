@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/36975b8b7a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#protfolio">Protfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h2>
+            Hey, i'm <span>Sushan</span><br />
+            from Kathmandu,Nepal
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/phone-b.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h2>About Me</h2>
+            <br />
+            <p>
+              I am a Computer Student and tech enthusiast. I love to learn new
+              technology and get updated with latest trends. I want to make
+              world a better place through technology. I also love to engaged in
+              different tech community.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tabs" id="Skills">
+              <ul>
+                <li>
+                  <span><u>Basic UI/UX</u> </span><br />Designing web app
+                  interfaces
+                </li>
+                <li>
+                  <span><u>Web Development</u> </span><br />JavaScript<br />Git
+                  <br />ReactJs <br />Bootstrap <br />HTML,CSS & JS <br />OOP
+                  <br />Node Js
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span><u>Microsoft Student Partner</u> </span><br />Git and
+                  Github Workshop <br />Azure Worshop(co-organizer)
+                </li>
+                <li>
+                  <span><u>Hackethons</u> </span><br />Runner up-Bernhack<br />Asian
+                  Hack- Participant
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span><u>2015</u></span
+                  ><br />Completed School level
+                </li>
+                <li>
+                  <span><u>2015 - 2017</u> </span><br />Complete
+                  Intermediate(+2) level
+                </li>
+                <li>
+                  <span><u>2018 - till</u> </span><br />Bachelor in compute
+                  science & IT at madan Bhandari memorial college
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+      <div class="container">
+        <h2>My Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Design</h3>
+            <p>
+              I am a Computer Student and tech enthusiast. I love to learn new
+              technology and get updated with latest trends. I want to make
+              world a better place through technology. I also love to engaged in
+              different tech community.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-uikit"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              I am a Computer Student and tech enthusiast. I love to learn new
+              technology and get updated with latest trends. I want to make
+              world a better place through technology. I also love to engaged in
+              different tech community.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              I am a Computer Student and tech enthusiast. I love to learn new
+              technology and get updated with latest trends. I want to make
+              world a better place through technology. I also love to engaged in
+              different tech community.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- protfolio -->
+
+    <div id="protfolio">
+      <div class="container">
+        <h2>My Work</h2>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work-1.png" alt="" />
+            <div class="layer">
+              <h4>Social Media App</h4>
+              <p>
+                very beautiful app , you can get this app on playstore/appstore.
+                Download it.
+              </p>
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-2.png" alt="" />
+            <div class="layer">
+              <h4>Music App</h4>
+              <p>
+                very beautiful app , you can get this app on playstore/appstore.
+                Download it.
+              </p>
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-3.png" alt="" />
+            <div class="layer">
+              <h4>E-commerce app</h4>
+              <p>
+                very beautiful app , you can get this app on playstore/appstore.
+                Download it.
+              </p>
+              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2>Contact Me</h2>
+            <p><i class="fa-regular fa-envelope"></i> contact@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9812345678</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="./images/cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="#">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter your name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email your email"
+                required
+              />
+              <textarea
+                name="Message"
+                cols="30"
+                rows="8"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © sushan</p>
+      </div>
+    </div>
+
+    <script>
+      //var tablinks=document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tabs");
+        }
+        document.getElementById(tabname).classList.add("active-tabs");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
